@@ -5,6 +5,7 @@ from time import sleep
 import os
 chrome_options = Options()
 chrome_options.add_argument("--headless")
+chrome_options.add_argument('log-level=3')
 driver = wb.Chrome("chromedriver",options=chrome_options)
 driver.get("https://www.omegle.com/")
 sleep(2)
